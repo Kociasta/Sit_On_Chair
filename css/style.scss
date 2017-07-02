@@ -266,6 +266,7 @@ div.unwrap::after { // this element is added because of hidding unwrap after mou
     background-size: cover;
     background-position: center;
     margin-right: 30px;
+    cursor: pointer;
   }
 
   article:nth-child(2) {
@@ -275,6 +276,7 @@ div.unwrap::after { // this element is added because of hidding unwrap after mou
     background-size: cover;
     background-position: center;
     margin-right: 30px;
+    cursor: pointer;
   }
 
   article:last-child {
@@ -575,6 +577,7 @@ label[for="checked"]{
   padding: 10px; /*this line centres text verticaly */
   margin: 0 auto;
   border: none;
+  cursor: pointer;
 }
 
 /*........................FooTER............*/
