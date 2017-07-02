@@ -1,6 +1,6 @@
 module.exports = {
-	entry: "./js/extras.js",
-	output: { filename: "./js/app.js" },
+	entry: "./js/app.js",
+	output: { filename: "./js/out.js" },
 	watch: true,
 	module: {
         loaders: [
@@ -17,7 +17,7 @@ module.exports = {
 						  test: /\.(jpg|png|svg)$/,
 						  loader: 'url-loader',
 						  options: {
-						  limit: 25000,
+						  limit: 250000,
 						 	}
 						}
         ]

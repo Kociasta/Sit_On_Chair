@@ -2,7 +2,7 @@
   "name": "sit_on_chair",
   "version": "2.0.0",
   "description": "new version of Sit_On_Chair website",
-  "main": "app.js",
+  "main": "out.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
