@@ -119,6 +119,7 @@ div.unwrap::after { // this element is added because of hidding unwrap after mou
   vertical-align: top;
   margin-top: 100px;
   /*border: 1px solid red;*/
+  cursor: pointer;
 }
 
 .clickLeft p , .clickRight p{
@@ -131,7 +132,8 @@ div.unwrap::after { // this element is added because of hidding unwrap after mou
   font-size: 60px;
   vertical-align: top;
   margin-top: 100px;
-  border: 1px solid red;
+  // border: 1px solid red;
+  cursor: pointer;
   }
 
 .center {
@@ -141,12 +143,9 @@ div.unwrap::after { // this element is added because of hidding unwrap after mou
 
     .slider {
       display: inline-block;
+
       div {
         display: none;
-      }
-
-      .visible {
-        display: inline-block;
       }
 
       #leftBigBlack {   /* this is black chair image */
@@ -227,6 +226,7 @@ div.unwrap::after { // this element is added because of hidding unwrap after mou
     text-align: center; /* this line centres text  inside the button*/
     padding: 15px; /* this line centres text verticaly */
     margin: 35px auto; /*this line centres WHOLE BUTTON - horizontaly */
+    cursor: pointer;
   }
 
   .button1 span {

@@ -19,64 +19,48 @@ $( () =>  {
 
 
   //............................................... slider
-  let index = 0;
-  let lists = $('.slider').children('div');
-  console.log(lists);
+  { // variables lives only in this brackets
+      let index = 0;
+      let lists = $('.slider').children('div');
+      console.log(lists);
 
-  $(lists[0]).show();
+      $(lists[0]).show();
 
-  function showNextPic() {
-    $(lists[index]).hide();
-    // lists[index].classList.toggle("visible");
-    index++;
-    if(index >= lists.length){
-      index=0;
-    };
-    $(lists[index]).show();
-  };
+      function showNextPic() {
+        $(lists[index]).hide();
+        // lists[index].classList.toggle("visible");
+        index++;
+        if(index >= lists.length){
+          index=0;
+        };
+        $(lists[index]).show();
+      };
 
-  $('.clickRight').on("click" , (event) => {
+      $('.clickRight').on("click" , (event) => {
+        showNextPic();
+      });
+
+      function showPrevPic() {
+        $(lists[index]).hide();
+        // lists[index].classList.toggle("visible");
+        index--;
+        if(index <= -1){
+          index=lists.length-1;
+        };
+        $(lists[index]).show();
+      };
+
+      $('.clickLeft').on("click" , (event) => {
+        showPrevPic();
+      });
+  }
+  // ...................................................button1
+
+  $('.button1').on("click" , event => {
+    event.preventDefault();
     console.log("click");
-    showNextPic();
+
   });
-
-  function showPrevPic() {
-    $(lists[index]).hide();
-    // lists[index].classList.toggle("visible");
-    index--;
-    if(index <= -1){
-      index=lists.length-1;
-    };
-    $(lists[index]).show();
-  };
-
-  $('.clickLeft').on("click" , (event) => {
-    console.log("click");
-    showPrevPic();
-  });
-
-
-  // function showNextPic(){
-  //   lists[index].classList.toggle("visible");
-  //   dots[index].classList.toggle("onDot");
-  //   index++;
-  //   if(index >= lists.length){
-  //     index=0;
-  //   }
-  //   lists[index].classList.toggle("visible");
-  //   dots[index].classList.toggle("onDot");
-  // }
-  // function showPrevPic(){
-  //   lists[index].classList.toggle("visible");
-  //   dots[index].classList.toggle("onDot");
-  //   index--;
-  //   if(index <= -1){
-  //     index=lists.length-1;
-  //   }
-  //   lists[index].classList.toggle("visible");
-  //   dots[index].classList.toggle("onDot");
-  // }
-  //
 
   //................................................hidding stripe on img in galery
   $(".galleryImage").on("mouseenter",  (event) => {
