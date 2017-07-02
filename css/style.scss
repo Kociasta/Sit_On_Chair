@@ -20,7 +20,7 @@ section, header {
 }
 
 .centerContainer {
-  width: 1054px; /*taki był rozmiar layoutu*/
+  width: 1054px; /*width of layoutu*/
   display: block;
   margin: 0 auto;
 }
@@ -131,80 +131,111 @@ div.unwrap::after { // this element is added because of hidding unwrap after mou
   font-size: 60px;
   vertical-align: top;
   margin-top: 100px;
-  /*border: 1px solid red;*/
+  border: 1px solid red;
   }
 
 .center {
   width: 987px;
   display: inline-block;
   /*border: 1px solid yellow;*/
-}
 
-#leftBig {   /* this is black chair image */
-  display: inline-block;
-  width: 320px;
-  height: 300px;
-  background-image: url('../images/black_chair.png');
-  background-position: center;
-  background-size: 180%;
-  margin-right: 100px;
-  margin-left: 60px;
-  /*border: 1px solid red;*/
-}
-/* Under black chair has to be elips - shadow */
-/*.elipse {
+    .slider {
+      display: inline-block;
+      div {
+        display: none;
+      }
 
-  width: 360px;
-  height: 100px;
-  background-color: red;
-  position fixed;
-  z-index: 3;
-} */
+      .visible {
+        display: inline-block;
+      }
 
-#rightBig { /*text netx to the black chair img */
-  display: inline-block;
-  width: 410px;
-  height: auto;
-  vertical-align: top;
-  /*border: 1px solid green;*/
+      #leftBigBlack {   /* this is black chair image */
+        // display: inline-block;
+        width: 320px;
+        height: 300px;
+        background-image: url('../images/black_chair.png');
+        background-position: center;
+        background-size: 180%;
+        margin-right: 100px; // was 100px
+        margin-left: 60px; //was 60px
+        /*border: 1px solid red;*/
+      }
 
-  h1 {
-    text-transform: uppercase;
-    font-size: 30px;
+      #leftBigOrange {   /* this is orange chair image */
+        // display: inline-block;
+        width: 320px;
+        height: 300px;
+        background-image: url('../images/orange_chair.png');
+        background-position: center;
+        background-size: 130%;
+        margin-right: 100px;
+        margin-left: 60px;
+        /*border: 1px solid red;*/
+      }
+
+      #leftBigRed {   /* this is red chair image */
+        // display: inline-block;
+        width: 320px;
+        height: 300px;
+        background-image: url('../images/red.png');
+        background-position: center;
+        background-size: 130%;
+        margin-right: 100px;
+        margin-left: 60px;
+        /*border: 1px solid red;*/
+      }
+
+  }
+
+
+  #rightBig { /*text netx to the black chair img */
+    display: inline-block;
+    width: 410px;
+    height: auto;
+    vertical-align: top;
+    // border: 1px solid green;
+
+    h1 {
+      text-transform: uppercase;
+      font-size: 30px;
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 45px;
+      /*border: 1px solid violet;*/
+    }
+
+    p{
+      font-size: 13px;
+      word-spacing: 0.6px;
+      letter-spacing: 0.6px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: center;
+    }
+
+  }
+
+  .button1 {
+    width: 200px;
+    height: 50px;
+    color: white;
+    background-color: $main_green_color;
+    font-size: 18px;
     font-weight: 500;
-    text-align: center;
-    margin-bottom: 45px;
-    /*border: 1px solid violet;*/
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-align: center; /* this line centres text  inside the button*/
+    padding: 15px; /* this line centres text verticaly */
+    margin: 35px auto; /*this line centres WHOLE BUTTON - horizontaly */
   }
 
-  p{
-    font-size: 13px;
-    word-spacing: 0.6px;
-    letter-spacing: 0.6px;
-    font-weight: 400;
-    line-height: 20px;
-    text-align: center;
+  .button1 span {
+    margin: 0 auto;
   }
 
 }
 
-.button1 {
-  width: 200px;
-  height: 50px;
-  color: white;
-  background-color: $main_green_color;
-  font-size: 18px;
-  font-weight: 500;
-  text-transform: uppercase;
-  border-radius: 5px;
-  text-align: center; /* this line centres text  inside the button*/
-  padding: 15px; /* this line centres text verticaly */
-  margin: 35px auto; /*this line centres WHOLE BUTTON - horizontaly */
-}
 
-.button1 span {
-  margin: 0 auto;
-}
 /*..................gallery.............*/
 #galleryNdescript {
   background-color: #fff;
